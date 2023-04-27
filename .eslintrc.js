@@ -15,7 +15,7 @@ module.exports = {
   parserOptions: {
     project: ['tsconfig.json'],
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'tailwind.config.js'],
   plugins: ['simple-import-sort', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -29,5 +29,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     'import/no-mutable-exports': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
+    'import/no-extraneous-dependencies': ['off'],
   },
 };
